@@ -1,0 +1,4 @@
+CONFIG=A RUN=1 TIME=Mon Mar  9 21:26:08 KST 2026
+P1: 8.67 Gbps  retrans=24498
+P4: 8.79 Gbps  retrans=67875
+P6: 9.08 Gbps  retrans=85701

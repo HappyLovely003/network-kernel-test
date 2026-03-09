@@ -1,0 +1,170 @@
+[21:20:23] ========== 실험 시작 (4vCPU / 8GB 고정) | 큐모드=1 ==========
+[21:20:23] CLIENT=10.161.96.174  SERVER=10.161.96.157
+[21:20:41] [WARN] ubuntu@10.161.96.157 SSH 타임아웃. 45초 후 재시도 (1/5)...
+[21:21:44] [WARN] ubuntu@10.161.96.157 SSH 타임아웃. 45초 후 재시도 (2/5)...
+[21:22:30] ubuntu@10.161.96.157 SSH 연결 OK (시도 3/5)
+[21:22:30] ubuntu@10.161.96.174 SSH 연결 OK (시도 1/5)
+[21:22:30] SSH 연결 확인 완료 (서버/클라이언트)
+[21:22:31] iperf3 확인 OK (서버/클라이언트)
+[21:22:31] ===== A: Baseline (기본값, 큐=1) =====
+[21:22:31] 큐 설정: 1개 (ubuntu@10.161.96.174, NIC=enp2s0, 최대=1)
+[21:22:32] 큐 검증 OK: 1개
+[21:22:32] -- A Run 1/3 --
+==============================
+ CONFIG=A  RUN=1
+ CLIENT=10.161.96.174  SERVER=10.161.96.157
+ Mon Mar  9 21:22:32 KST 2026
+==============================
+
+[21:22:35] TCP P=1 측정 (60s)...
+  → 8.67 Gbps  (재전송: 24498)
+
+[21:23:46] TCP P=4 측정 (60s)...
+  → 8.79 Gbps  (재전송: 67875)
+
+[21:24:57] TCP P=6 측정 (60s)...
+  → 9.08 Gbps  (재전송: 85701)
+CONFIG=A RUN=1 TIME=Mon Mar  9 21:26:08 KST 2026
+P1: 8.67 Gbps  retrans=24498
+P4: 8.79 Gbps  retrans=67875
+P6: 9.08 Gbps  retrans=85701
+[21:27:08] -- A Run 2/3 --
+==============================
+ CONFIG=A  RUN=2
+ CLIENT=10.161.96.174  SERVER=10.161.96.157
+ Mon Mar  9 21:27:08 KST 2026
+==============================
+kex_exchange_identification: read: Operation timed out
+banner exchange: Connection to 10.161.96.157 port 22: Operation timed out
+[21:27:27] [WARN] Run 2 실패. 90초 대기 후 재시도 (1/3)...
+==============================
+ CONFIG=A  RUN=2
+ CLIENT=10.161.96.174  SERVER=10.161.96.157
+ Mon Mar  9 21:28:57 KST 2026
+==============================
+kex_exchange_identification: read: Operation timed out
+banner exchange: Connection to 10.161.96.157 port 22: Operation timed out
+[21:29:15] [WARN] Run 2 실패. 90초 대기 후 재시도 (2/3)...
+==============================
+ CONFIG=A  RUN=2
+ CLIENT=10.161.96.174  SERVER=10.161.96.157
+ Mon Mar  9 21:30:45 KST 2026
+==============================
+kex_exchange_identification: read: Operation timed out
+banner exchange: Connection to 10.161.96.157 port 22: Operation timed out
+[21:31:03] [ERROR] Run 2 3회 시도 후 실패. SSH 타임아웃이면 VM 부하 직후 일시적일 수 있음.
+[21:31:03] 호스트 원본 값 복원 중...
+복원: 10.161.96.32
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.core.busy_read = 0
+net.ipv4.tcp_rmem = 4096 131072 6291456
+net.ipv4.tcp_wmem = 4096 16384 4194304
+  완료: rmem_max=212992
+복원: 10.161.96.33
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.core.busy_read = 0
+net.ipv4.tcp_rmem = 4096 131072 6291456
+net.ipv4.tcp_wmem = 4096 16384 4194304
+  완료: rmem_max=212992
+[완료] 기본값 복원
+[21:33:41] RUN 2만 실행 (RUN_NUM=2)
+[21:33:41] ========== 실험 시작 (4vCPU / 8GB 고정) | 큐모드=1 ==========
+[21:33:41] CLIENT=10.161.96.174  SERVER=10.161.96.157
+[21:33:59] [WARN] ubuntu@10.161.96.157 SSH 타임아웃. 45초 후 재시도 (1/5)...
+[21:34:45] ubuntu@10.161.96.157 SSH 연결 OK (시도 2/5)
+[21:34:46] ubuntu@10.161.96.174 SSH 연결 OK (시도 1/5)
+[21:34:46] SSH 연결 확인 완료 (서버/클라이언트)
+[21:35:04] [ERROR] ubuntu@10.161.96.157 에서 iperf3 실행 불가. VM 접속 후: sudo apt install -y iperf3
+[21:35:04] 호스트 원본 값 복원 중...
+복원: 10.161.96.32
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.core.busy_read = 0
+net.ipv4.tcp_rmem = 4096 131072 6291456
+net.ipv4.tcp_wmem = 4096 16384 4194304
+  완료: rmem_max=212992
+복원: 10.161.96.33
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.core.busy_read = 0
+net.ipv4.tcp_rmem = 4096 131072 6291456
+net.ipv4.tcp_wmem = 4096 16384 4194304
+  완료: rmem_max=212992
+[완료] 기본값 복원
+[21:36:38] RUN 2만 실행 (RUN_NUM=2)
+[21:36:38] ========== 실험 시작 (4vCPU / 8GB 고정) | 큐모드=1 ==========
+[21:36:38] CLIENT=10.161.96.174  SERVER=10.161.96.157
+[21:36:56] [WARN] ubuntu@10.161.96.157 SSH 타임아웃. 45초 후 재시도 (1/5)...
+[21:37:41] ubuntu@10.161.96.157 SSH 연결 OK (시도 2/5)
+[21:37:42] ubuntu@10.161.96.174 SSH 연결 OK (시도 1/5)
+[21:37:42] SSH 연결 확인 완료 (서버/클라이언트)
+[21:37:42] ===== A: Baseline (기본값, 큐=1) =====
+[21:37:43] 큐 설정: 1개 (ubuntu@10.161.96.174, NIC=enp2s0, 최대=1)
+[21:37:43] 큐 검증 OK: 1개
+[21:37:43] -- A Run 2/3 --
+==============================
+ CONFIG=A  RUN=2
+ CLIENT=10.161.96.174  SERVER=10.161.96.157
+ Mon Mar  9 21:37:43 KST 2026
+==============================
+kex_exchange_identification: read: Operation timed out
+banner exchange: Connection to 10.161.96.157 port 22: Operation timed out
+[21:38:01] [WARN] Run 2 실패. 90초 대기 후 재시도 (1/3)...
+==============================
+ CONFIG=A  RUN=2
+ CLIENT=10.161.96.174  SERVER=10.161.96.157
+ Mon Mar  9 21:39:32 KST 2026
+==============================
+kex_exchange_identification: read: Operation timed out
+banner exchange: Connection to 10.161.96.157 port 22: Operation timed out
+[21:39:50] [WARN] Run 2 실패. 90초 대기 후 재시도 (2/3)...
+==============================
+ CONFIG=A  RUN=2
+ CLIENT=10.161.96.174  SERVER=10.161.96.157
+ Mon Mar  9 21:41:20 KST 2026
+==============================
+kex_exchange_identification: read: Operation timed out
+banner exchange: Connection to 10.161.96.157 port 22: Operation timed out
+[21:41:38] [ERROR] Run 2 3회 시도 후 실패. SSH 타임아웃이면 VM 부하 직후 일시적일 수 있음.
+[21:41:38] 호스트 원본 값 복원 중...
+복원: 10.161.96.32
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.core.busy_read = 0
+net.ipv4.tcp_rmem = 4096 131072 6291456
+net.ipv4.tcp_wmem = 4096 16384 4194304
+  완료: rmem_max=212992
+복원: 10.161.96.33
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.core.busy_read = 0
+net.ipv4.tcp_rmem = 4096 131072 6291456
+net.ipv4.tcp_wmem = 4096 16384 4194304
+  완료: rmem_max=212992
+[완료] 기본값 복원

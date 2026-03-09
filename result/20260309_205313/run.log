@@ -1,0 +1,29 @@
+[20:53:13] ========== 실험 시작 (4vCPU / 8GB 고정) | 큐모드=1 ==========
+[20:53:13] CLIENT=10.161.96.174  SERVER=10.161.96.157
+[20:53:13] ===== A: Baseline (기본값, 큐=1) =====
+[20:53:13] 큐 설정: 1개 (ubuntu@10.161.96.174, NIC=enp2s0)
+[20:53:14] [ERROR] 큐 조회 실패 (ethtool -l enp2s0 결과 없음). run.log 확인
+[20:53:14] 호스트 원본 값 복원 중...
+복원: 10.161.96.32
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.core.busy_read = 0
+net.ipv4.tcp_rmem = 4096 131072 6291456
+net.ipv4.tcp_wmem = 4096 16384 4194304
+  완료: rmem_max=212992
+복원: 10.161.96.33
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.core.busy_read = 0
+net.ipv4.tcp_rmem = 4096 131072 6291456
+net.ipv4.tcp_wmem = 4096 16384 4194304
+  완료: rmem_max=212992
+[완료] 기본값 복원

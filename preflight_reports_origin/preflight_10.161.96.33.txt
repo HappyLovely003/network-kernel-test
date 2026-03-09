@@ -1,0 +1,129 @@
+[10.161.96.33] 연결 중...
+=== Harvester 노드 사전 검증 ===
+OS: PRETTY_NAME="Harvester v1.7.0"
+커널: 6.4.0-36-default
+
+--- vhost_net 모듈 ---
+vhost_net              36864  11
+tun                    69632  34 vhost_net
+vhost                  65536  1 vhost_net
+tap                    28672  1 vhost_net
+[OK]
+
+--- 현재 sysctl 기준값 기록 ---
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.ipv4.tcp_rmem = 4096	131072	6291456
+net.ipv4.tcp_wmem = 4096	16384	4194304
+
+--- ethtool (물리 NIC) ---
+  eno1:
+driver: tg3
+Current hardware settings:
+RX:		4
+TX:		1
+  eno2:
+driver: tg3
+Current hardware settings:
+RX:		4
+TX:		1
+  eno3:
+driver: tg3
+Current hardware settings:
+RX:		4
+TX:		1
+  eno4:
+driver: tg3
+Current hardware settings:
+RX:		4
+TX:		1
+  enp132s0f0:
+driver: ixgbe
+Current hardware settings:
+RX:		n/a
+TX:		n/a
+  calib3d8042972c@if2:
+  enp132s0f1:
+driver: ixgbe
+Current hardware settings:
+RX:		n/a
+TX:		n/a
+  veth7464ae18@if3:
+  mgmt-br:
+driver: bridge
+  mgmt-bo:
+driver: bonding
+  flannel.1:
+driver: vxlan
+  calie38dc57b222@if2:
+  cali6cb1f62e75b@if2:
+  cali0c98e8ce196@if2:
+  calid3a4f57da19@if2:
+  cali52f57d3b90f@if2:
+  calie3b2f0cf295@if2:
+  calic9c739e42a9@if2:
+  cali9b0d8dd4f9c@if2:
+  cali886048e3e1d@if2:
+  veth555d3a80@if3:
+  veth03fc4dcf@if3:
+  calie363a93599c@if2:
+  cali55cbb1b8d41@if2:
+  calidd1865d269e@if2:
+  calib4c02465f49@if2:
+  cali0e71368dbb8@if2:
+  cali857e0c9a300@if2:
+  calie357a48ea74@if2:
+  cali377e13f1170@if2:
+  veth452309d7@if3:
+  cali8c68ea5e0ec@if2:
+  cali4a9379ce81b@if2:
+  cali855327d178d@if2:
+  veth9fd21961@if3:
+  calidf36d25f5a1@if2:
+  cali6b4a058b719@if2:
+  cali03e5c1a3aee@if2:
+  calic897d245251@if2:
+  califb473724672@if2:
+  cali4e377ea1eb3@if2:
+  cali9b0946b6552@if2:
+  caliaa2ec1e6118@if2:
+  cali8ffc713083c@if2:
+  cali9efe7ba9805@if2:
+  cali808318d2bae@if2:
+  cali333f0a1ba9d@if2:
+  cali21bd327d120@if2:
+  cali265ddbee8cf@if2:
+  caliad74b6a2705@if2:
+  calib6cb80b571f@if2:
+  cali3a34e6994a5@if2:
+  calieb923842201@if2:
+  calid9c903502a3@if2:
+  calid26cb32d3d8@if2:
+  cali01b6929e89b@if2:
+  cali50da67bcc50@if2:
+  calibf3eba31e24@if2:
+  cali61aa616e9ba@if2:
+  cali315e3291e08@if2:
+  calif8b736b98bc@if2:
+  cali37fa22125f9@if2:
+  calia3a67084bde@if2:
+  provider-bo:
+driver: bonding
+  provider-br:
+driver: bridge
+  cali0bc3ab2dda3@if2:
+  calicd1a4b5b354@if2:
+  cali753dbf1daa5@if2:
+  cali01b83c443d1@if2:
+  cali14f6ebbaf11@if2:
+  caliec2d857d9eb@if2:
+  caliba5b13c3f3d@if2:
+  califdf79fdfef6@if2:
+  calib98c1062579@if2:
+  veth4e3cd9dd@if3:
+  cali90abe86b357@if2:
+[10.161.96.33] 완료 → ./preflight_reports/preflight_10.161.96.33.txt

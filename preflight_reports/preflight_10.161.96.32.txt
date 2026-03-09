@@ -1,0 +1,106 @@
+[10.161.96.32] 연결 중...
+=== Harvester 노드 사전 검증 ===
+OS: PRETTY_NAME="Harvester v1.7.0"
+커널: 6.4.0-36-default
+
+--- vhost_net 모듈 ---
+vhost_net              36864  15
+tun                    69632  46 vhost_net
+vhost                  65536  1 vhost_net
+tap                    28672  1 vhost_net
+[OK]
+
+--- 현재 sysctl 기준값 기록 ---
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.core.netdev_max_backlog = 1000
+net.core.busy_poll = 0
+net.ipv4.tcp_rmem = 4096	131072	6291456
+net.ipv4.tcp_wmem = 4096	16384	4194304
+
+--- ethtool (물리 NIC) ---
+  eno1:
+driver: tg3
+Current hardware settings:
+RX:		4
+TX:		1
+  eno2:
+driver: tg3
+Current hardware settings:
+RX:		4
+TX:		1
+  eno3:
+driver: tg3
+Current hardware settings:
+RX:		4
+TX:		1
+  eno4:
+driver: tg3
+Current hardware settings:
+RX:		4
+TX:		1
+  enp132s0f0:
+driver: ixgbe
+Current hardware settings:
+RX:		n/a
+TX:		n/a
+  enp132s0f1:
+driver: ixgbe
+Current hardware settings:
+RX:		n/a
+TX:		n/a
+  mgmt-br:
+driver: bridge
+  mgmt-bo:
+driver: bonding
+  provider-bo:
+driver: bonding
+  provider-br:
+driver: bridge
+  flannel.1:
+driver: vxlan
+  calid06927ce5f1@if2:
+  cali11da173bd8c@if2:
+  cali17989e56f24@if2:
+  calia0e7dbfaecd@if2:
+  cali34e7d13fc37@if2:
+  cali48e9600266b@if2:
+  calib6a539d8b5a@if2:
+  calif822c969ceb@if2:
+  calidbddc36297e@if2:
+  cali25c49ce87a9@if2:
+  cali4352f961b06@if2:
+  cali5434bfbfeb0@if2:
+  calib4fdefa76d1@if2:
+  cali20f0b6be9bb@if2:
+  calif83974f8c40@if2:
+  cali1123f6e24dc@if2:
+  cali28132ce90ec@if2:
+  veth9df40418@if3:
+  calicd571721585@if2:
+  cali7996bef3bf8@if2:
+  calia899b366ede@if2:
+  caliac7a1d70fae@if2:
+  vethce57dd4a@if3:
+  cali4b93400830f@if2:
+  cali7a3e248aa10@if2:
+  veth9fa36018@if3:
+  calib796b9a3409@if2:
+  veth8f2ca0e3@if3:
+  cali0e3be3a1676@if2:
+  cali84c809eecdb@if2:
+  calieeb7f2b5e51@if2:
+  cali93c9aae6923@if2:
+  veth681e2250@if3:
+  cali3ed08fc2494@if2:
+  veth27c42585@if3:
+  cali9efe13a4fc4@if2:
+  cali7559e398ec3@if2:
+  calia90c34078e4@if2:
+  veth47c906c8@if3:
+  cali169a307b4ca@if2:
+  cali6783631e504@if2:
+  veth16290530@if3:
+[10.161.96.32] 완료 → ./preflight_reports/preflight_10.161.96.32.txt
