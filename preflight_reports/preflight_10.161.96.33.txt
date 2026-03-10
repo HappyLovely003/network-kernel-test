@@ -4,8 +4,8 @@ OS: PRETTY_NAME="Harvester v1.7.0"
 커널: 6.4.0-36-default
 
 --- vhost_net 모듈 ---
-vhost_net              36864  13
-tun                    69632  40 vhost_net
+vhost_net              36864  19
+tun                    69632  52 vhost_net
 vhost                  65536  1 vhost_net
 tap                    28672  1 vhost_net
 [OK]
@@ -16,6 +16,7 @@ net.core.wmem_max = 212992
 net.core.rmem_default = 212992
 net.core.wmem_default = 212992
 net.core.netdev_max_backlog = 1000
+net.core.somaxconn = 4096
 net.core.busy_poll = 0
 net.ipv4.tcp_rmem = 4096	131072	6291456
 net.ipv4.tcp_wmem = 4096	16384	4194304
@@ -84,9 +85,7 @@ driver: vxlan
   cali855327d178d@if2:
   veth9fd21961@if3:
   calidf36d25f5a1@if2:
-  cali819f74f5dc5@if2:
   cali6b4a058b719@if2:
-  vethf83112b7@if3:
   cali03e5c1a3aee@if2:
   calic897d245251@if2:
   califb473724672@if2:
@@ -100,7 +99,9 @@ driver: vxlan
   cali21bd327d120@if2:
   cali265ddbee8cf@if2:
   caliad74b6a2705@if2:
+  cali58c81a7bbf0@if2:
   calib6cb80b571f@if2:
+  veth7ecbe1a2@if3:
   cali3a34e6994a5@if2:
   calieb923842201@if2:
   calid9c903502a3@if2:

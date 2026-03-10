@@ -16,6 +16,7 @@ net.core.wmem_max = 212992
 net.core.rmem_default = 212992
 net.core.wmem_default = 212992
 net.core.netdev_max_backlog = 1000
+net.core.somaxconn = 4096
 net.core.busy_poll = 0
 net.ipv4.tcp_rmem = 4096	131072	6291456
 net.ipv4.tcp_wmem = 4096	16384	4194304
@@ -87,6 +88,7 @@ driver: vxlan
   cali3e6b3fad5e8@if2:
   cali73b09ad2c3f@if2:
   cali7fab85f6226@if2:
+  calif4a55b04db4@if2:
   caliacd98218aa2@if2:
   cali71de934bd36@if2:
   cali5c0134c5c40@if2:
